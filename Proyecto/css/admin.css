@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.body {
+  display: flex;
+  min-height: 100cm;
+}
+
+.barra {
+  background: #8B4513;
+  color: #fff;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.barra .nombre {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.barra nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.barra nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.barra nav a:hover,
+.barra nav a.active {
+  background: #A0522D;
+}
+
+.header h1 {
+  color: #8B4513;
+}
+
+.info {
+  padding: 20px;
+}
+
+
+.info .btn {
+  background: #8B4513;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info .btn:hover {
+  background: #A0522D;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  max-width: 600px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+form .btn {
+  background: #8B4513;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background: #A0522D;
+}
+
+footer {
+  background-color: #8B4513;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo Producto</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="body">
+    <aside class="barra">
+      <div class="nombre">Pastelería Mil Sabores</div>
+      <nav>
+        <a href="admin-index.html">Home</a>
+        <a href="admin-productos.html" class="active">Productos</a>
+        <a href="admin-usuarios.html">Usuarios</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Nuevo Producto</h1>
+      </header>
+
+      <form id="formProductoNuevo" class="formulario">
+        <label>Código Producto:</label>
+        <input type="text" name="codigo" required minlength="3">
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required maxlength="100">
+
+        <label>Descripción:</label>
+        <textarea name="descripcion" maxlength="500"></textarea>
+
+        <label>Precio:</label>
+        <input type="number" name="precio" min="0" step="0.01" required>
+
+        <label>Stock:</label>
+        <input type="number" name="stock" min="0" required>
+
+        <label>Stock Crítico:</label>
+        <input type="number" name="stockCritico" min="0">
+
+        <label>Categoría:</label>
+        <select name="categoria" required>
+          <option value="">Seleccione...</option>
+          <option value="tortas">Tortas</option>
+          <option value="postres">Postres</option>
+        </select>
+
+        <label>Imagen:</label>
+        <input type="file" name="imagen" accept="image/*">
+
+        <button type="submit" class="btn">Guardar Producto</button>
+      </form>
+    </main>
+  </div>
+
+  <footer>
+    <p>Pastelería Mil Sabores • Creado por Johann Carrasco y Martina Ortiz</p>
+  </footer>
+  
+  <script src="js/admin.js"></script>
+</body>
+</html>

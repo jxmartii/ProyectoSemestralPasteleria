@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador - Productos</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="body">
+    <aside class="barra">
+      <div class="nombre">Pastelería Mil Sabores</div>
+      <nav>
+        <a href="admin-index.html">Home</a>
+        <a href="admin-productos.html" class="active">Productos</a>
+        <a href="admin-usuarios.html">Usuarios</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Gestión de Productos</h1>
+        <a href="admin-producto-nuevo.html" class="btn">+ Nuevo Producto</a>
+      </header>
+
+      <section class="tabla-contenido">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Stock</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>P001</td>
+              <td>Torta de Chocolate</td>
+              <td>$45.000</td>
+              <td>12</td>
+              <td>
+                <a href="admin-producto-editar.html" class="btn-small">Editar</a>
+              </td>
+            </tr>
+            <tr>
+              <td>P002</td>
+              <td>Tarta de Naranja</td>
+              <td>$28.000</td>
+              <td>7</td>
+              <td>
+                <a href="admin-producto-editar.html" class="btn-small">Editar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>Pastelería Mil Sabores • Creado por Johann Carrasco y Martina Ortiz</p>
+  </footer>
+   
+</body>
+</html>

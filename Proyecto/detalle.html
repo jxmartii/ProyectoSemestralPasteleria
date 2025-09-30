@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Producto - Pastelería Mil Sabores</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div>
+        <img src="img/Logo.png" alt="logo" width="40">
+        <span>Pastelería Mil Sabores</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="acciones">
+        <a href="login.html">Iniciar sesión</a> |
+        <a href="registro.html">Registrar usuario</a> |
+        <a href="carrito.html" class="carrito">Carrito 0</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="detalle-container">
+      <img id="detalle-img" src="" alt="Producto">
+      <div class="info-producto">
+        <h2>
+          <span id="detalle-nombre"></span>
+          <span id="detalle-precio"></span>
+        </h2>
+        <hr>
+        <p id="detalle-descripcion" class="descripcion"></p>
+        <hr>
+        <div class="cantidad-agregar">
+          <!-- Aquí solo se deja esta clase, no btn-agregar -->
+          <input type="number" id="cantidad-producto" value="1" min="1">
+          <button class="agregar-carrito">Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <h3>Recomendaciones</h3>
+    <!-- Aquí se llenará dinámicamente -->
+    <div class="recomendaciones-detalle"></div>
+  </main>
+
+  <footer>
+    <p>Pastelería Mil Sabores • Creado por Johann Carrasco y Martina Ortiz</p>
+  </footer>
+
+  <!-- Solo se llama el JS general -->
+  <script src="js/script.js"></script>
+  <!-- Inicializar detalle y recomendaciones -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderDetallePage(); 
+      renderRecomendacionesAleatorias('.recomendaciones-detalle', 5);
+      actualizarContadorCarrito();
+      actualizarHeader();
+    });
+  </script>
+</body>
+</html>
